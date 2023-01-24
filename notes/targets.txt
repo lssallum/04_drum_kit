@@ -1,0 +1,10 @@
+const img = document.getElementById('img');
+const buttons = document.getElementById('buttons');
+const trafficLight = (event) => {
+  if (event.target.id == 'red') {
+    turnOnRed();
+  }
+}
+buttons.addEventListener('click', trafficLight);
+
+O event.target.id - Mostra as etapas do evento relacionado ao objeto que está sendo "Ouvido" (EventListener), nesse caso é o ID
